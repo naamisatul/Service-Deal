@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Deal - AC Repair Gorakhpur | Fast & Reliable Cooling Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #0066cc;
+            --secondary-color: #00b4d8;
+            --accent-color: #ff6b35;
+            --text-dark: #1a1a1a;
+            --text-light: #666;
+            --bg-light: #f8f9ff;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* HEADER & NAVIGATION */
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0, 102, 204, 0.2);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        .cta-button {
+            background: var(--accent-color);
+            color: var(--white);
+            padding: 10px 25px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .cta-button:hover {
+            background: #e55a25;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, #0066cc 0%, #00b4d8 50%, #0088ff 100%);
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -5%;
+            width: 400px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(30px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: slideUp 0.8s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            line-height: 1.5;
+        }
+
+        .highlight {
+            background: var(--accent-color);
+            padding: 5px 15px;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--accent-color);
+            color: var(--white);
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        .btn-primary:hover {
+            background: #e55a25;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(255, 107, 53, 0.5);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            padding: 15px 40px;
+            border: 2px solid var(--white);
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        /* STATS SECTION */
+        .stats {
+            background: var(--bg-light);
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .stat-item {
+            text-align: center;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .stat-text {
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+
+        /* SERVICES SECTION */
+        .services {
+            padding: 80px 20px;
+            background: var(--white);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: var(--text-dark);
+        }
+
+        .section-title span {
+            color: var(--primary-color);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--bg-light);
+            padding: 40px 25px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .service-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 102, 204, 0.15);
+        }
+
+        .service-card:hover::before {
+            left: 100%;
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+
+        .service-price {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        /* WHY CHOOSE US */
+        .why-choose {
+            background: linear-gradient(135deg, #f0f7ff 0%, #e6f2ff 100%);
+            padding: 80px 20px;
+        }
+
+        .why-choose-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .why-item {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            display: flex;
+            gap: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 102, 204, 0.08);
+        }
+
+        .why-item:hover {
+            box-shadow: 0 8px 25px rgba(0, 102, 204, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .why-icon {
+            font-size: 2.5rem;
+            min-width: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .why-content h4 {
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .why-content p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* TESTIMONIALS */
+        .testimonials {
+            padding: 80px 20px;
+            background: var(--white);
+        }
+
+        .testimonials-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .testimonial-card {
+            background: var(--bg-light);
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 5px solid var(--secondary-color);
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            box-shadow: 0 8px 25px rgba(0, 180, 216, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .stars {
+            color: #ffc107;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .testimonial-text {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 5px;
+        }
+
+        .testimonial-location {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* BOOKING FORM */
+        .booking-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            padding: 80px 20px;
+            color: var(--white);
+        }
+
+        .booking-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .booking-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .booking-section p {
+            text-align: center;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.3);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-submit {
+            width: 100%;
+            background: var(--accent-color);
+            color: var(--white);
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        .form-submit:hover {
+            background: #e55a25;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(255, 107, 53, 0.5);
+        }
+
+        .form-submit:active {
+            transform: translateY(0);
+        }
+
+        /* FLOATING ACTION BUTTON */
+        .floating-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--accent-color);
+            border: none;
+            border-radius: 50%;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
+            transition: all 0.3s ease;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .floating-btn:hover {
+            background: #e55a25;
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(255, 107, 53, 0.5);
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 50px 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-section a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--secondary-color);
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .contact-icon {
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #444;
+            padding-top: 30px;
+            text-align: center;
+            color: #aaa;
+        }
+
+        /* MODAL */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background: var(--white);
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 500px;
+            animation: slideIn 0.3s ease;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .close-btn {
+            float: right;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #aaa;
+            cursor: pointer;
+            transition: color 0.3s;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+
+        .close-btn:hover {
+            color: var(--text-dark);
+        }
+
+        .modal h2 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            nav {
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                display: none;
+            }
+
+            nav a.show {
+                display: block;
+                width: 100%;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .btn-primary, .btn-secondary {
+                width: 100%;
+            }
+
+            .floating-btn {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 1.2rem;
+            }
+
+            .modal-content {
+                margin: 20% auto;
+                width: 90%;
+                padding: 20px;
+            }
+        }
+
+        /* NOTIFICATION */
+        .notification {
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            background: #4caf50;
+            color: var(--white);
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(76, 175, 80, 0.3);
+            z-index: 3000;
+            animation: slideInRight 0.5s ease;
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(400px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .notification.hide {
+            animation: slideOutRight 0.5s ease forwards;
+        }
+
+        @keyframes slideOutRight {
+            to {
+                transform: translateX(400px);
+                opacity: 0;
+            }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
+            }
+            50% {
+                box-shadow: 0 5px 30px rgba(255, 107, 53, 0.6);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <img src="Service.jpg" alt="Service Deal Logo" style="height: 50px; width: auto; border-radius: 5px;">
+            <span>Service Deal</span>
+        </div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#why-us">Why Us</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#booking">Book Now</a>
+            <button class="cta-button" onclick="openCallModal()">📞 Call Now</button>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Stay Cool, Stay Comfortable! 🌬️</h1>
+        <p>Professional AC Repair & Maintenance Services in <span class="highlight">Gorakhpur</span></p>
+        <p style="font-size: 1rem; opacity: 0.9;">By Service Deal | Fast Response • Expert Technicians • 24/7 Emergency Support • Affordable Rates</p>
+        <div class="hero-buttons">
+            <button class="btn-primary" onclick="scrollToBooking()">Book Now - Get 20% OFF</button>
+            <button class="btn-secondary" onclick="openCallModal()">📞 Call: 7706060900</button>
+        </div>
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+    <div class="stat-item">
+        <div class="stat-number">5000+</div>
+        <div class="stat-text">Happy Customers Served</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-number">15+</div>
+        <div class="stat-text">Years of Experience</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-number">24/7</div>
+        <div class="stat-text">Emergency Support Available</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-number">4.8★</div>
+        <div class="stat-text">Average Customer Rating</div>
+    </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="services" id="services">
+    <h2 class="section-title">Our <span>Services</span></h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="service-icon">🔧</div>
+            <h3>AC Repair</h3>
+            <p>Expert diagnosis and repair of all AC units. Same-day service available.</p>
+            <div class="service-price">Starting ₹499</div>
+            <button class="cta-button" onclick="openBookingModal()">Book Service</button>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">✨</div>
+            <h3>AC Maintenance</h3>
+            <p>Regular maintenance to keep your AC running efficiently and increase lifespan.</p>
+            <div class="service-price">Starting ₹799</div>
+            <button class="cta-button" onclick="openBookingModal()">Book Service</button>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🧪</div>
+            <h3>Gas Refilling</h3>
+            <p>Professional refrigerant gas refilling with leak detection and repair.</p>
+            <div class="service-price">Starting ₹2499</div>
+            <button class="cta-button" onclick="openBookingModal()">Book Service</button>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🧹</div>
+            <h3>AC Cleaning</h3>
+            <p>Deep cleaning of AC filters, coils, and ducts for better air quality.</p>
+            <div class="service-price">Starting ₹699</div>
+            <button class="cta-button" onclick="openBookingModal()">Book Service</button>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">💨</div>
+            <h3>Installation</h3>
+            <p>Professional installation of new AC units with warranty and support.</p>
+            <div class="service-price">Starting ₹3999</div>
+            <button class="cta-button" onclick="openBookingModal()">Book Service</button>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🆘</div>
+            <h3>24/7 Emergency Service</h3>
+            <p>Round-the-clock emergency support for sudden AC breakdowns.</p>
+            <div class="service-price">Priority Service</div>
+            <button class="cta-button" onclick="openBookingModal()">Book Service</button>
+        </div>
+    </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-choose" id="why-us">
+    <div class="why-choose-container">
+        <h2 class="section-title">Why Choose <span>Service Deal?</span></h2>
+        <div class="why-grid">
+            <div class="why-item">
+                <div class="why-icon">⚡</div>
+                <div class="why-content">
+                    <h4>Quick Response Time</h4>
+                    <p>We arrive within 1-2 hours of your booking in Gorakhpur area.</p>
+                </div>
+            </div>
+
+            <div class="why-item">
+                <div class="why-icon">👨‍🔧</div>
+                <div class="why-content">
+                    <h4>Certified Technicians</h4>
+                    <p>Our team is certified and trained with 10+ years of experience.</p>
+                </div>
+            </div>
+
+            <div class="why-item">
+                <div class="why-icon">💰</div>
+                <div class="why-content">
+                    <h4>Transparent Pricing</h4>
+                    <p>No hidden charges. Quote is provided before starting any work.</p>
+                </div>
+            </div>
+
+            <div class="why-item">
+                <div class="why-icon">✅</div>
+                <div class="why-content">
+                    <h4>Warranty Coverage</h4>
+                    <p>All repairs come with 1-year warranty for your peace of mind.</p>
+                </div>
+            </div>
+
+            <div class="why-item">
+                <div class="why-icon">🎁</div>
+                <div class="why-content">
+                    <h4>Special Offers</h4>
+                    <p>Get 20% discount on first booking and seasonal maintenance plans.</p>
+                </div>
+            </div>
+
+            <div class="why-item">
+                <div class="why-icon">📱</div>
+                <div class="why-content">
+                    <h4>Easy Booking</h4>
+                    <p>Book online, via phone, or WhatsApp. Choose what works for you!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+    <div class="testimonials-container">
+        <h2 class="section-title">What Our <span>Customers Say</span></h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"AirCool Services fixed my AC in just 45 minutes! The technician was very professional and the price was reasonable. Highly recommended for Gorakhpur!"</p>
+                <div class="testimonial-author">Rajesh Kumar</div>
+                <div class="testimonial-location">Gorakhpur, Sector 5</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Great service quality and customer support. They helped me choose the right maintenance plan for my AC. Will definitely use them again!"</p>
+                <div class="testimonial-author">Priya Sharma</div>
+                <div class="testimonial-location">Gorakhpur, Civil Lines</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"24/7 support is amazing! My AC broke down at midnight and they came immediately. Professional team with reasonable rates. 5 stars!"</p>
+                <div class="testimonial-author">Vikram Singh</div>
+                <div class="testimonial-location">Gorakhpur, Naubasta</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"First booking got 20% discount which was great. The technician explained everything clearly and the work quality is excellent!"</p>
+                <div class="testimonial-author">Anjali Patel</div>
+                <div class="testimonial-location">Gorakhpur, Cantonment</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Been using AirCool for annual maintenance for 2 years now. Very reliable and they always come on time. Thanks for excellent service!"</p>
+                <div class="testimonial-author">Arun Verma</div>
+                <div class="testimonial-location">Gorakhpur, Kotwali</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Amazing response time and professional service. They even gave a warranty card for the repair. Definitely the best in Gorakhpur!"</p>
+                <div class="testimonial-author">Neha Gupta</div>
+                <div class="testimonial-location">Gorakhpur, Kailash Road</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BOOKING SECTION -->
+<section class="booking-section" id="booking">
+    <div class="booking-container">
+        <h2>Quick Booking Form</h2>
+        <p>Fill the form below and get instant service booking confirmation</p>
+        
+        <form id="bookingForm" onsubmit="submitBooking(event)">
+            <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your 10-digit phone number" pattern="[0-9]{10}">
+            </div>
+
+            <div class="form-group">
+                <label for="service">Select Service *</label>
+                <select id="service" name="service" required>
+                    <option value="">Choose a service</option>
+                    <option value="repair">AC Repair</option>
+                    <option value="maintenance">AC Maintenance</option>
+                    <option value="gas">Gas Refilling</option>
+                    <option value="cleaning">AC Cleaning</option>
+                    <option value="installation">Installation</option>
+                    <option value="emergency">Emergency Service</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location in Gorakhpur *</label>
+                <input type="text" id="location" name="location" required placeholder="Enter your area/address">
+            </div>
+
+            <div class="form-group">
+                <label for="date">Preferred Date *</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Additional Details (Optional)</label>
+                <textarea id="message" name="message" placeholder="Tell us more about your AC issue..."></textarea>
+            </div>
+
+            <button type="submit" class="form-submit">✓ Confirm Booking</button>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>About Service Deal</h3>
+            <p>Leading AC service provider in Gorakhpur with 15+ years of experience. We are committed to providing quality service at affordable prices.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-us">Why Choose Us</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#booking">Book Now</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <div class="contact-info">
+                <span class="contact-icon">📞</span>
+                <span>7706060900</span>
+            </div>
+            <div class="contact-info">
+                <span class="contact-icon">💬</span>
+                <span>7706060900 (WhatsApp)</span>
+            </div>
+            <div class="contact-info">
+                <span class="contact-icon">📍</span>
+                <span>Gorakhpur, Uttar Pradesh</span>
+            </div>
+            <div class="contact-info">
+                <span class="contact-icon">⏰</span>
+                <span>24/7 Available</span>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>Service Areas</h3>
+            <ul>
+                <li><a href="#">Fatima Road</a></li>
+                <li><a href="#">Geeta Vatika</a></li>
+                <li><a href="#">Mohaddipur</a></li>
+                <li><a href="#">Golghar</a></li>
+                <li><a href="#">Rapti Nagar</a></li>
+                <li><a href="#">Taramandal</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Service Deal. All rights reserved. | Serving Gorakhpur with excellence | 24/7 Emergency Support</p>
+    </div>
+</footer>
+
+<!-- FLOATING ACTION BUTTON -->
+<button class="floating-btn pulse" onclick="openCallModal()" title="Call Now">📞</button>
+
+<!-- BOOKING MODAL -->
+<div id="bookingModal" class="modal">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal('bookingModal')">&times;</button>
+        <h2>Quick Booking</h2>
+        <form id="quickBookingForm" onsubmit="submitQuickBooking(event)">
+            <div class="form-group">
+                <label for="qname">Your Name *</label>
+                <input type="text" id="qname" name="qname" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="qphone">Phone Number *</label>
+                <input type="tel" id="qphone" name="qphone" required placeholder="10-digit number" pattern="[0-9]{10}">
+            </div>
+            <div class="form-group">
+                <label for="qservice">Service Type *</label>
+                <select id="qservice" name="qservice" required>
+                    <option value="">Select service</option>
+                    <option value="repair">AC Repair</option>
+                    <option value="maintenance">AC Maintenance</option>
+                    <option value="gas">Gas Refilling</option>
+                    <option value="cleaning">AC Cleaning</option>
+                    <option value="installation">Installation</option>
+                    <option value="emergency">Emergency Service</option>
+                </select>
+            </div>
+            <button type="submit" class="form-submit">Book Now</button>
+        </form>
+    </div>
+</div>
+
+<!-- CALL MODAL -->
+<div id="callModal" class="modal">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal('callModal')">&times;</button>
+        <h2>📞 Call Us Now!</h2>
+        <p style="margin: 20px 0; text-align: center;">
+            <a href="tel:7706060900" style="display: inline-block; padding: 15px 30px; background: var(--accent-color); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem;">
+                📞 Call: 7706060900
+            </a>
+        </p>
+        <p style="margin: 20px 0; text-align: center;">
+            <a href="https://wa.me/7706060900" target="_blank" style="display: inline-block; padding: 15px 30px; background: #25d366; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem;">
+                💬 WhatsApp: 7706060900
+            </a>
+        </p>
+        <p style="text-align: center; color: #666; margin-top: 20px;">
+            Available 24/7 for emergency service<br>
+            Response time: Within 1-2 hours in Gorakhpur
+        </p>
+    </div>
+</div>
+
+<script>
+    // SCROLL TO BOOKING
+    function scrollToBooking() {
+        document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // MODAL FUNCTIONS
+    function openBookingModal() {
+        document.getElementById('bookingModal').style.display = 'block';
+    }
+
+    function openCallModal() {
+        document.getElementById('callModal').style.display = 'block';
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = 'none';
+    }
+
+    // CLOSE MODAL ON OUTSIDE CLICK
+    window.onclick = function(event) {
+        let modals = document.getElementsByClassName('modal');
+        for (let i = 0; i < modals.length; i++) {
+            if (event.target === modals[i]) {
+                modals[i].style.display = 'none';
+            }
+        }
+    }
+
+    // FORM SUBMISSION
+    function submitBooking(e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const service = document.getElementById('service').value;
+        const location = document.getElementById('location').value;
+        const date = document.getElementById('date').value;
+
+        // Here you would typically send this data to a server
+        console.log('Booking submitted:', {name, phone, service, location, date});
+        
+        // Show notification
+        showNotification(`✓ Booking confirmed! We will call you on ${phone} shortly.`);
+        
+        // Reset form
+        document.getElementById('bookingForm').reset();
+        
+        // Optionally redirect to WhatsApp
+        setTimeout(() => {
+            const message = `Hi, I want to book ${service} service for ${date}. My name is ${name}. Location: ${location}`;
+            window.open(`https://wa.me/7706060900?text=${encodeURIComponent(message)}`);
+        }, 1500);
+    }
+
+    function submitQuickBooking(e) {
+        e.preventDefault();
+        const name = document.getElementById('qname').value;
+        const phone = document.getElementById('qphone').value;
+        const service = document.getElementById('qservice').value;
+
+        console.log('Quick booking submitted:', {name, phone, service});
+        
+        closeModal('bookingModal');
+        showNotification(`✓ Booking confirmed! We will call you on ${phone} shortly.`);
+        
+        document.getElementById('quickBookingForm').reset();
+        
+        setTimeout(() => {
+            const message = `Hi, I want to book ${service} service. My name is ${name}.`;
+            window.open(`https://wa.me/7706060900?text=${encodeURIComponent(message)}`);
+        }, 1500);
+    }
+
+    // NOTIFICATION
+    function showNotification(message) {
+        const notification = document.createElement('div');
+        notification.className = 'notification';
+        notification.textContent = message;
+        document.body.appendChild(notification);
+
+        setTimeout(() => {
+            notification.classList.add('hide');
+            setTimeout(() => notification.remove(), 500);
+        }, 4000);
+    }
+
+    // SET MINIMUM DATE TO TODAY
+    document.addEventListener('DOMContentLoaded', function() {
+        const dateInput = document.getElementById('date');
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.setAttribute('min', today);
+    });
+
+    // SMOOTH SCROLL BEHAVIOR
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
+    // ANIMATION ON SCROLL
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animation = 'fadeInUp 0.8s ease forwards';
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.service-card, .why-item, .testimonial-card').forEach(el => {
+        observer.observe(el);
+    });
+</script>
+
+</body>
+</html>
