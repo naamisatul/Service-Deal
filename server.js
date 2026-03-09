@@ -32,19 +32,38 @@ initializeExcel();
 
 // Route to handle booking submissions
 app.post('/api/book', (req, res) => {
-    const { name, phone, service } = req.body;
-
-    if (!name || !phone || !service) {
-        return res.status(400).json({ error: 'Missing required fields' });
-    }
-
     try {
+        const { name, phone, service } = req.body;
+
+        console.log('Received booking request:', { name, phone, service });
+
+        if (!name || !phone || !service) {
+            console.log('Missing required fields');
+            return res.status(400).json({ error: 'Missing required fields: name, phone, or service' });
+        }
+
+        // Validate phone number format
+        if (!/^[0-9]{10}$/.test(phone)) {
+            console.log('Invalid phone number format:', phone);
+            return res.status(400).json({ error: 'Invalid phone number format. Please enter a 10-digit number.' });
+        }
+
         // Read existing Excel file
+        if (!fs.existsSync(EXCEL_FILE)) {
+            console.log('Excel file not found, creating new one');
+            initializeExcel();
+        }
+
         const wb = XLSX.readFile(EXCEL_FILE);
         const ws = wb.Sheets['Bookings'];
 
         // Get existing data
-        const data = XLSX.utils.sheet_to_json(ws, { header: 1 });
+        const data = XLSX.utils.sheet_to_json(ws, { header: 1, defval: '' });
+
+        // Ensure we have headers
+        if (data.length === 0 || !data[0].includes('Name')) {
+            data.unshift(['Name', 'Phone', 'Service', 'Timestamp']);
+        }
 
         // Add new row
         const timestamp = new Date().toISOString();
@@ -57,12 +76,19 @@ app.post('/api/book', (req, res) => {
         // Write back to file
         XLSX.writeFile(wb, EXCEL_FILE);
 
-        console.log(`New booking added: ${name}, ${phone}, ${service}`);
-        res.json({ success: true, message: 'Booking saved successfully' });
+        console.log(`✅ Booking saved successfully: ${name}, ${phone}, ${service}`);
+        res.json({
+            success: true,
+            message: 'Booking saved successfully',
+            data: { name, phone, service, timestamp }
+        });
 
     } catch (error) {
-        console.error('Error saving booking:', error);
-        res.status(500).json({ error: 'Failed to save booking' });
+        console.error('❌ Error saving booking:', error);
+        res.status(500).json({
+            error: 'Failed to save booking to Excel file',
+            details: error.message
+        });
     }
 });
 
