@@ -1218,7 +1218,7 @@
         
         // Optionally redirect to WhatsApp
         setTimeout(() => {
-            const message = `Hi, I want to book ${service} service for ${date}. My name is ${name}. Location: ${location}`;
+            const message = `Hi, I want to book ${service} service for ${date}. My name is ${name}. Location: ${location}. Phone: ${phone}`;
             window.open(`https://wa.me/7355792814?text=${encodeURIComponent(message)}`);
         }, 1500);
     }
